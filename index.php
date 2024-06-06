@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Sistem Pakar Diagnosa Penyakit Kucing</h1>
+    <h1>Diagnosa Penyakit Kucing</h1>
     <form action="hasil.php" method="post">
         <h2>Pilih Gejala:</h2>
         <?php
@@ -17,7 +17,7 @@
             echo '<label><input type="checkbox" name="gejala[]" value="' . $row['id_gejala'] . '"> ' . $row['nama_gejala'] . '</label><br>';
         }
         ?>
-        <button type="submit">Diagnosa</button>
+        <button type="submit">DIAGNOSA</button>
     </form>
 </body>
 </html>
