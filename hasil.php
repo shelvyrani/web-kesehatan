@@ -16,7 +16,7 @@
         $gejala_list = implode(",", $gejala);
 
       
-        $query = "SELECT * FROM penyakit";
+        $query = "SELECT * FROM tb_penyakit";
         $result = mysqli_query($conn, $query);
         $penyakit_teridentifikasi = [];
         $penyakit_gejala_count = [];
@@ -25,7 +25,7 @@
             $penyakit_id = $penyakit['id_penyakit'];
             
             
-            $gejala_query = "SELECT id_gejala FROM aturan_diagnosis WHERE id_penyakit = $penyakit_id";
+            $gejala_query = "SELECT id_gejala FROM aturan_diagnosa WHERE id_penyakit = $penyakit_id";
             $gejala_result = mysqli_query($conn, $gejala_query);
 
             $gejala_penyakit = [];

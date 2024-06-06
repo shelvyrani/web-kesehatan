@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root"; 
-$password = ""; 
+$password = "root"; 
 $dbname = "sistem_pakar_penyakit_kucing";
 
 
